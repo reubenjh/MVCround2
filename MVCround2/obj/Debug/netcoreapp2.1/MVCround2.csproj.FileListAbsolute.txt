@@ -1,0 +1,14 @@
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\bin\Debug\netcoreapp2.1\MVCround2.deps.json
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\bin\Debug\netcoreapp2.1\MVCround2.runtimeconfig.json
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\bin\Debug\netcoreapp2.1\MVCround2.runtimeconfig.dev.json
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\bin\Debug\netcoreapp2.1\MVCround2.dll
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\bin\Debug\netcoreapp2.1\MVCround2.pdb
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.csprojAssemblyReference.cache
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.csproj.CoreCompileInputs.cache
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.RazorAssemblyInfo.cache
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.RazorAssemblyInfo.cs
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.AssemblyInfoInputs.cache
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.AssemblyInfo.cs
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.RazorTargetAssemblyInfo.cache
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.dll
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.pdb
