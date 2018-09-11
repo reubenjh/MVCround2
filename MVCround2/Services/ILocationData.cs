@@ -7,5 +7,6 @@ namespace MVCround2.Services
     {
         IEnumerable<Location> GetAll();
         Location Get(int id);
+        Location Add(Location newLocation);
     }
 }

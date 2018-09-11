@@ -1,0 +1,32 @@
+﻿@using MVCround2.EntityModels
+@model Location
+
+<h1>Create a Ghibli location</h1>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <br/>
+
+    <label>Climate:
+        <input asp-for="Climate" />
+    </label>
+    <br/>
+
+    <label>Terrain type:
+        <input asp-for="Terrain" />
+    </label>
+    <br/>
+
+    <label>
+        <select asp-for="Rating"
+                asp-items="@Html.GetEnumSelectList<Ratings>()">
+        </select>
+    </label>
+    <br/>
+
+    <input type="submit" name="save" value="save" />
+</form>

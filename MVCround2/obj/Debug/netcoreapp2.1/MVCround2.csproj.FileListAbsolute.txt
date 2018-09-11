@@ -36,3 +36,5 @@ C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround
 C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.Views.pdb
 C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\MVCround2.csproj.CopyComplete
 C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.g.cshtml.cs
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
+C:\Users\rjhar\source\repos\MVCround2\MVCround2\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs

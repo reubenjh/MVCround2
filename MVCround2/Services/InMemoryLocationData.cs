@@ -50,6 +50,13 @@ namespace MVCround2.Services
             return _locations.FirstOrDefault(r => r.Id == id);
         }
 
+        public Location Add(Location newLocation)
+        {
+            newLocation.Id = _locations.Max(l => l.Id) + 1;
+            _locations.Add(newLocation);
+            return newLocation;
+        }
+
         List<Location> _locations;
     }
 }
