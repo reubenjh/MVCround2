@@ -11506,9 +11506,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rjhar\\source\\repos\\MVCround2\\MVCround2\\MVCround2.csproj",
-      "projectName": "MVCround2",
-      "projectPath": "C:\\Users\\rjhar\\source\\repos\\MVCround2\\MVCround2\\MVCround2.csproj",
+      "projectUniqueName": "C:\\Users\\rjhar\\source\\repos\\MVCround2\\MVCround2\\ghibli.csproj",
+      "projectName": "ghibli",
+      "projectPath": "C:\\Users\\rjhar\\source\\repos\\MVCround2\\MVCround2\\ghibli.csproj",
       "packagesPath": "C:\\Users\\rjhar\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rjhar\\source\\repos\\MVCround2\\MVCround2\\obj\\",
       "projectStyle": "PackageReference",

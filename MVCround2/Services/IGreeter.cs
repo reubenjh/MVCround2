@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace MVCround2
+namespace MVCround2.Services
 {
     public interface IGreeter
     {
