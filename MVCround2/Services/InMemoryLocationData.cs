@@ -1,4 +1,4 @@
-﻿using MVCround2.Models;
+﻿using MVCround2.EntityModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace MVCround2.Services
                     Terrain = "Mountain"
                 },
                 new Location {
-                    Id = 12,
+                    Id = 2,
                     Name = "Gutiokipanja",
                     Climate = "Continental",
                     Terrain = "Hill"
@@ -42,7 +42,12 @@ namespace MVCround2.Services
 
         public IEnumerable<Location> GetAll()
         {
-            return _locations.OrderBy(l => l.Name);
+            return _locations;
+        }
+
+        public Location Get(int id)
+        {
+            return _locations.FirstOrDefault(r => r.Id == id);
         }
 
         List<Location> _locations;

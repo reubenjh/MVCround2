@@ -1,0 +1,19 @@
+﻿@model MVCround2.EntityModels.Location
+
+<h1>@Model.Name</h1>
+<h3>Details ...</h3>
+<table>
+    <tr>
+        <td><strong>Id</strong></td>
+        <td><strong>Name</strong></td>
+        <td><strong>Climate</strong></td>
+        <td><strong>Terrain type</strong></td>
+    </tr>
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.Name</td>
+        <td>@Model.Climate</td>
+        <td>@Model.Terrain</td>
+    </tr>
+</table>
+<a asp-action="Index" asp-controller="Home">Back</a>

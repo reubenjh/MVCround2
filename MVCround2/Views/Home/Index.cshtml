@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MVCround2.Models.Location>
+﻿@model MVCround2.ViewModels.HomeIndexViewModel
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,13 +6,20 @@
 </head>
 <body>
     <h1>Where in the world of Ghibli?</h1>
+    <h3>@Model.CurrentMessage</h3>
     <table>
-        @foreach (var location in Model)
+        <tr>
+            <td><strong>Id</strong></td>
+            <td><strong>Name</strong></td>
+        </tr>
+        @foreach (var location in Model.Locations)
         {
             <tr>
+                <td>@location.Id</td>
                 <td>@location.Name</td>
-                <td>@location.Climate</td>
-                <td>@location.Terrain</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@location.Id">Go to details</a>
+                </td>
             </tr>
         }
     </table>
