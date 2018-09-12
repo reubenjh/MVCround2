@@ -1,0 +1,41 @@
+﻿@page "{id}"
+@using MVCround2.Pages.Locations;
+
+@model EditModel
+
+@{
+    ViewBag.Title = $"Edit {Model.Location.Name}";
+}
+
+<h1>Edit @Model.Location.Name</h1>
+
+<form method="post">
+    <input asp-for="Location.Id" type="hidden" />
+
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="Location.Name"></label>
+        <input asp-for="Location.Name" />
+    </div>
+    <br />
+
+    <label>
+        Climate:
+        <input asp-for="Location.Climate" />
+    </label>
+    <br />
+
+    <label>
+        Terrain type:
+        <input asp-for="Location.Terrain" />
+    </label>
+    <br />
+
+    <label>
+        <select asp-for="Location.Rating"
+                asp-items="@Html.GetEnumSelectList<Ratings>()"></select>
+    </label>
+    <br />
+
+    <input type="submit" name="save" value="Save" />
+</form>

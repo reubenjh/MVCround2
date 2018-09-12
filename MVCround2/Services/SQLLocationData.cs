@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MVCround2.Data;
 using MVCround2.EntityModels;
 
@@ -31,6 +32,14 @@ namespace MVCround2.Services
         public IEnumerable<Location> GetAll()
         {
             return _context.Locations;
+        }
+
+        public Location Update(Location newLocation)
+        {
+            _context.Attach(newLocation).State = 
+                EntityState.Modified;
+            _context.SaveChanges();
+            return newLocation;
         }
     }
 }

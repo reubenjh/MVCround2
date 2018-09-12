@@ -3,7 +3,7 @@
     ViewBag.Title = "Home page";
 }
 
-<h1>Where in the world of Ghibli?</h1>
+<h1>All the Ghibli locations!</h1>
 <table>
     <tr>
         <td><strong>Id</strong></td>
@@ -15,7 +15,8 @@
             <td>@location.Id</td>
             <td>@location.Name</td>
             <td>
-                <a asp-action="Details" asp-route-id="@location.Id">Go to details</a>
+                <a asp-action="Details" asp-route-id="@location.Id">More</a>
+                <a asp-page="/Locations/Edit" asp-route-id="@location.Id">Edit</a>
             </td>
         </tr>
     }

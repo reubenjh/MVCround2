@@ -1,3 +1,4 @@
-﻿@page
-@inject IGreeter Greeter
-<div>@Greeter.GetMessageOfTheDay()</div>
+﻿@page 
+@model GreetingModel
+
+<div>@Model.CurrentGreeting</div>
