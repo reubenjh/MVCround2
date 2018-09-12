@@ -1,28 +1,27 @@
-﻿@model MVCround2.ViewModels.HomeIndexViewModel
+﻿@model HomeIndexViewModel
+@{
+    ViewBag.Title = "Home page";
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h1>Where in the world of Ghibli?</h1>
-    <h3>@Model.CurrentMessage</h3>
-    <table>
+<h1>Where in the world of Ghibli?</h1>
+<table>
+    <tr>
+        <td><strong>Id</strong></td>
+        <td><strong>Name</strong></td>
+    </tr>
+    @foreach (var location in Model.Locations)
+    {
         <tr>
-            <td><strong>Id</strong></td>
-            <td><strong>Name</strong></td>
+            <td>@location.Id</td>
+            <td>@location.Name</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@location.Id">Go to details</a>
+            </td>
         </tr>
-        @foreach (var location in Model.Locations)
-        {
-            <tr>
-                <td>@location.Id</td>
-                <td>@location.Name</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@location.Id">Go to details</a>
-                </td>
-            </tr>
-        }
-    </table>
-    <a asp-action="Create">Add a new location</a>
-</body>
-</html>
+    }
+</table>
+<a asp-action="Create">Add a new location</a>
+
+@section footer { 
+    @Model.CurrentMessage
+}

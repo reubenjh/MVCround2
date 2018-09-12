@@ -1,5 +1,8 @@
-﻿@using MVCround2.EntityModels
-@model Location
+﻿@model Location
+
+@{
+    ViewBag.Title = "Create";
+}
 
 <h1>Create a Ghibli location</h1>
 
@@ -9,24 +12,25 @@
         <label asp-for="Name"></label>
         <input asp-for="Name" />
     </div>
-    <br/>
+    <br />
 
-    <label>Climate:
+    <label>
+        Climate:
         <input asp-for="Climate" />
     </label>
-    <br/>
+    <br />
 
-    <label>Terrain type:
+    <label>
+        Terrain type:
         <input asp-for="Terrain" />
     </label>
-    <br/>
+    <br />
 
     <label>
         <select asp-for="Rating"
-                asp-items="@Html.GetEnumSelectList<Ratings>()">
-        </select>
+                asp-items="@Html.GetEnumSelectList<Ratings>()"></select>
     </label>
-    <br/>
+    <br />
 
     <input type="submit" name="save" value="save" />
 </form>
